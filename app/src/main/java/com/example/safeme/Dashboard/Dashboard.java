@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.safeme.Complaints.Complaints;
 import com.example.safeme.Onboarding_Pages.HelperClasses.UserRegisterHelperClass;
@@ -75,6 +76,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
                 DashboardName.setText(userRegisterHelperClass.getName());
                 progressBar.setVisibility(View.GONE);
+                Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
             }
 
             @Override

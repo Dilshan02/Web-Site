@@ -91,9 +91,11 @@ public class UserRegister extends AppCompatActivity {
 
                 } else {
                     Toast.makeText(getApplicationContext(), "No Internet Connection, Please Connect to Internet", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "No Internet Connection, Please Connect to Internet", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(nic)) {
+                    Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                     return;
                 }
@@ -111,6 +113,7 @@ public class UserRegister extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please enter your Password", Toast.LENGTH_LONG).show();
                 }
                 if (pass.length() == 0) {
+                    Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "Password cannot be empty", Toast.LENGTH_LONG).show();
                 }
                 if (pass.length() < 6) {
@@ -129,6 +132,7 @@ public class UserRegister extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(), "ERROR! Cant create Account", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                     } else {
+                                        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                                         firebaseDatabase = FirebaseDatabase.getInstance();
                                         UserRegisterHelperClass userRegisterHelperClass = new UserRegisterHelperClass(nic, name, mobile, email, spin);
                                         databaseReference = firebaseDatabase.getReference("User Details").child("Users");
@@ -138,6 +142,7 @@ public class UserRegister extends AppCompatActivity {
                                         progressBar.setVisibility(View.GONE);
                                         startActivity(new Intent(getApplicationContext(), Dashboard.class));
                                         finish();
+                                        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
@@ -156,6 +161,7 @@ public class UserRegister extends AppCompatActivity {
             return connected;
         } catch (Exception e) {
             Log.e("Connectivity Exception", e.getMessage());
+            Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
         }
         return connected;
     }
@@ -164,5 +170,6 @@ public class UserRegister extends AppCompatActivity {
         Intent intent = new Intent(UserRegister.this, UserLogin.class);
         startActivity(intent);
         finish();
+        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
     }
 }
