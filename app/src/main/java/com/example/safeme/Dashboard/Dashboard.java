@@ -83,6 +83,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             public void onCancelled(@NonNull DatabaseError error) {
                 isConnected();
                 progressBar.setVisibility(View.GONE);
+                Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                 finish();
             }
         });
@@ -95,9 +96,11 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 switch (item.getItemId()) {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(), Dashboard.class));
+                        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                         break;
 
                     case R.id.logout:
+                        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                         signout();
                 }
                 return false;
@@ -112,6 +115,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
                 Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
+        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
     }
 
     //Navigation Drawer functions

@@ -18,6 +18,19 @@ public class ComplaintHelperClass {
     String CType;
     String ImageLink;
     String Status;
+    String check;
+
+    public String getCheck() {
+        return check;
+    }
+
+    public void setCheck(String check) {
+        this.check = check;
+    }
+
+    public ComplaintHelperClass(String check) {
+        this.check = check;
+    }
 
     public ComplaintHelperClass() {
     }
