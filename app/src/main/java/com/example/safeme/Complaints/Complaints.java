@@ -1,16 +1,8 @@
 package com.example.safeme.Complaints;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -26,8 +18,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.safeme.Complaints.ComplaintHelperClasses.ComplaintHelperClass;
 import com.example.safeme.Complaints.ComplaintsAdapters.ComplaintsAdapter;
@@ -49,10 +46,8 @@ import com.google.firebase.storage.UploadTask;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 import java.util.Random;
 
 public class Complaints extends AppCompatActivity {
@@ -126,11 +121,9 @@ public class Complaints extends AppCompatActivity {
     }
 
     private void filter(String toString) {
-        ArrayList<ComplaintHelperClass>filterList = new ArrayList<>();
-        for (ComplaintHelperClass item: complaintHelperClass)
-        {
-            if (item.getCID().toLowerCase().contains(toString.toLowerCase()))
-            {
+        ArrayList<ComplaintHelperClass> filterList = new ArrayList<>();
+        for (ComplaintHelperClass item : complaintHelperClass) {
+            if (item.getCID().toLowerCase().contains(toString.toLowerCase())) {
                 filterList.add(item);
             }
         }
@@ -280,7 +273,7 @@ public class Complaints extends AppCompatActivity {
         });
     }
 
-//Image validations
+    //Image validations
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

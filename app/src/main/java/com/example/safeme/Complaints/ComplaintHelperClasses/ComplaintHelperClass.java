@@ -1,12 +1,5 @@
 package com.example.safeme.Complaints.ComplaintHelperClasses;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Spinner;
-
-import com.example.safeme.R;
-import com.google.android.material.textfield.TextInputLayout;
-
 public class ComplaintHelperClass {
     String NIC;
     String Name;
@@ -34,6 +27,7 @@ public class ComplaintHelperClass {
 
     public ComplaintHelperClass() {
     }
+
     public ComplaintHelperClass(String nic, String name, String mobile, String city, String cid, String date, String description, String cType, String status) {
         NIC = nic;
         Name = name;
