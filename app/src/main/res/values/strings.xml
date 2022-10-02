@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SafeMe</string>
+    <string name="splash_text">Safe Me</string>
+    <string name="user_name">NIC</string>
+    <string name="user_email">Email</string>
+    <string name="reset">Reset</string>
+    <string name="back">Go back</string>
+    <string name="pass">Password</string>
+    <string name="forget_pass">Forget Password ?</string>
+    <string name="login">Login</string>
+    <string name="login_txt1">Hello, \nWelcome back</string>
+    <string name="login_txt2">Please login to continue</string>
+    <string name="register">New User? signUp</string>
+    <string name="reset_pass">Can\'t remember password</string>
+    <string name="reset_pass2">Please enter your email</string>
+
+    <string name="register_txt1">Welcome to \nSafeMe</string>
+    <string name="register_txt2">Please register to continue</string>
+    <string name="nic">NIC</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register2">Register</string>
+    <string name="already">Already have an account? Login</string>
+
+    <string-array name="city_array">
+        <item>Colombo</item>
+        <item>Gampaha</item>
+        <item>Kaluthara</item>
+        <item>Moratuwa</item>
+        <item>Katupotha</item>
+        <item>Kurunegala</item>
+        <item>Narammala</item>
+        <item>Diwulapitiya</item>
+    </string-array>
+
+    <string-array name="complaint_array">
+        <item>Minor Complaints</item>
+        <item>Minor Crimes(Less than 50,000)</item>
+        <item>Crime</item>
+        <item>Murder</item>
+        <item>Traffic Violations</item>
+        <item>Crimes against women and children</item>
+        <item>Other</item>
+    </string-array>
+</resources>

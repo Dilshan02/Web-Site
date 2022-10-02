@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/home"
+                    android:title="Home"></item>
+
+                <item
+                    android:id="@+id/safeme"
+                    android:icon="@drawable/safeme"
+                    android:title="Safe Me"></item>
+
+                <item
+                    android:id="@+id/complaint"
+                    android:icon="@drawable/complaint"
+                    android:title="Complaint"></item>
+
+                <item
+                    android:id="@+id/appoinment"
+                    android:icon="@drawable/appoinment"
+                    android:title="Appointment"></item>
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/profile"
+                    android:title="Profile"></item>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="App">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tearms_conditions"
+                    android:icon="@drawable/terms"
+                    android:title="Terms and Conditions">
+
+                </item>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout">
+
+                </item>
+            </group>
+        </menu>
+    </item>
+</menu>
