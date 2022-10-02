@@ -19,10 +19,10 @@ public class ComplaintsAdapter extends RecyclerView.Adapter {
 
     List<ComplaintHelperClass> complaintHelperClasses;
 
-    public ComplaintsAdapter(List<ComplaintHelperClass>complaintHelperClass)
-    {
+    public ComplaintsAdapter(List<ComplaintHelperClass> complaintHelperClass) {
         this.complaintHelperClasses = complaintHelperClass;
     }
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -40,10 +40,10 @@ public class ComplaintsAdapter extends RecyclerView.Adapter {
         ComplaintHelperClass complaintHelperClass = complaintHelperClasses.get(position);
 
         complaintHolderClass.CID.setText("CID : " + complaintHelperClass.getCID());
-        complaintHolderClass.Type.setText("Type : " +complaintHelperClass.getCType());
-        complaintHolderClass.Date.setText("Date : " +complaintHelperClass.getDate());
-        complaintHolderClass.NIC.setText("NIC : " +complaintHelperClass.getNIC());
-        complaintHolderClass.Status.setText("Status : " +complaintHelperClass.getStatus());
+        complaintHolderClass.Type.setText("Type : " + complaintHelperClass.getCType());
+        complaintHolderClass.Date.setText("Date : " + complaintHelperClass.getDate());
+        complaintHolderClass.NIC.setText("NIC : " + complaintHelperClass.getNIC());
+        complaintHolderClass.Status.setText("Status : " + complaintHelperClass.getStatus());
     }
 
     @Override
@@ -51,13 +51,14 @@ public class ComplaintsAdapter extends RecyclerView.Adapter {
         return complaintHelperClasses.size();
     }
 
-    public void filteredList(ArrayList<ComplaintHelperClass>filterList){
+    public void filteredList(ArrayList<ComplaintHelperClass> filterList) {
         complaintHelperClasses = filterList;
         notifyDataSetChanged();
     }
-    public class ComplaintHolderClass extends RecyclerView.ViewHolder{
 
-        TextView CID,Type,NIC,Date,Status;
+    public class ComplaintHolderClass extends RecyclerView.ViewHolder {
+
+        TextView CID, Type, NIC, Date, Status;
         ImageView Delete;
 
         public ComplaintHolderClass(@NonNull View itemView) {
