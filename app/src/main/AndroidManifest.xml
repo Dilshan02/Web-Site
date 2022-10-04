@@ -16,6 +16,9 @@
         android:theme="@style/Theme.SafeMe"
         tools:targetApi="31">
         <activity
+            android:name=".ChatSignUp"
+            android:exported="false" />
+        <activity
             android:name=".ChatLogin"
             android:exported="false" />
         <activity
