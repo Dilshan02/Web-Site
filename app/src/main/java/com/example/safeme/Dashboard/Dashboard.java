@@ -164,6 +164,78 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         });
     }
 
+    public DrawerLayout getDrawerLayout() {
+        return drawerLayout;
+    }
+
+    public void setDrawerLayout(DrawerLayout drawerLayout) {
+        this.drawerLayout = drawerLayout;
+    }
+
+    public NavigationView getNavigationView() {
+        return navigationView;
+    }
+
+    public void setNavigationView(NavigationView navigationView) {
+        this.navigationView = navigationView;
+    }
+
+    public ImageView getMenu_icon() {
+        return menu_icon;
+    }
+
+    public void setMenu_icon(ImageView menu_icon) {
+        this.menu_icon = menu_icon;
+    }
+
+    public LinearLayout getContentView() {
+        return contentView;
+    }
+
+    public void setContentView(LinearLayout contentView) {
+        this.contentView = contentView;
+    }
+
+    public TextView getDashboardName() {
+        return DashboardName;
+    }
+
+    public void setDashboardName(TextView dashboardName) {
+        DashboardName = dashboardName;
+    }
+
+    public ProgressBar getProgressBar() {
+        return progressBar;
+    }
+
+    public void setProgressBar(ProgressBar progressBar) {
+        this.progressBar = progressBar;
+    }
+
+    public FirebaseDatabase getFirebaseDatabase() {
+        return firebaseDatabase;
+    }
+
+    public void setFirebaseDatabase(FirebaseDatabase firebaseDatabase) {
+        this.firebaseDatabase = firebaseDatabase;
+    }
+
+    public DatabaseReference getDatabaseReference() {
+        return databaseReference;
+    }
+
+    public void setDatabaseReference(DatabaseReference databaseReference) {
+        this.databaseReference = databaseReference;
+    }
+
+    public FirebaseAuth getFirebaseAuth() {
+        return firebaseAuth;
+    }
+
+    public void setFirebaseAuth(FirebaseAuth firebaseAuth) {
+        this.firebaseAuth = firebaseAuth;
+    }
+
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
