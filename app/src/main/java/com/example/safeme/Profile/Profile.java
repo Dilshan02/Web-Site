@@ -1,11 +1,14 @@
 package com.example.safeme.Profile;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -30,18 +33,35 @@ public class Profile extends AppCompatActivity {
     }
 
     @Override
+    public void addContentView(View view, ViewGroup.LayoutParams params) {
+        super.addContentView(view, params);
+    }
+
+    @Override
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
     }
 
     @Override
-    public void setContentView(View view, ViewGroup.LayoutParams params) {
-        super.setContentView(view, params);
+    public void setTheme(int resId) {
+        super.setTheme(resId);
+    }
+
+    @NonNull
+    @Override
+    public MenuInflater getMenuInflater() {
+        return super.getMenuInflater();
+    }
+
+    @Nullable
+    @Override
+    public Intent getSupportParentActivityIntent() {
+        return super.getSupportParentActivityIntent();
     }
 
     @Override
-    public boolean supportRequestWindowFeature(int featureId) {
-        return super.supportRequestWindowFeature(featureId);
+    public void invalidateOptionsMenu() {
+        super.invalidateOptionsMenu();
     }
 
     @Override

@@ -1,8 +1,12 @@
 package com.example.safeme.Dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LifecycleOwner;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,5 +66,42 @@ public class UserFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_user, container, false);
+    }
+
+    @NonNull
+    @Override
+    public LifecycleOwner getViewLifecycleOwner() {
+        return super.getViewLifecycleOwner();
+    }
+
+    @Override
+    public void setMenuVisibility(boolean menuVisible) {
+        super.setMenuVisibility(menuVisible);
+    }
+
+    @Override
+    public void setArguments(@Nullable Bundle args) {
+        super.setArguments(args);
+    }
+
+    public String getmParam1() {
+        return mParam1;
+    }
+
+    public void setmParam1(String mParam1) {
+        this.mParam1 = mParam1;
+    }
+
+    public String getmParam2() {
+        return mParam2;
+    }
+
+    public void setmParam2(String mParam2) {
+        this.mParam2 = mParam2;
+    }
+
+    @Override
+    public void startActivity(Intent intent, @Nullable Bundle options) {
+        super.startActivity(intent, options);
     }
 }
