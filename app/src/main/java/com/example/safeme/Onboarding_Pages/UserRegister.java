@@ -116,6 +116,18 @@ public class UserRegister extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "Password cannot be empty", Toast.LENGTH_LONG).show();
                 }
+                if (pass.length() == 0) {
+                    Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Password cannot be empty", Toast.LENGTH_LONG).show();
+                }
+                if (pass.length() == 0) {
+                    Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Password cannot be empty", Toast.LENGTH_LONG).show();
+                }
+                if (pass.length() == 0) {
+                    Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Password cannot be empty", Toast.LENGTH_LONG).show();
+                }
                 if (pass.length() < 6) {
                     Toast.makeText(getApplicationContext(), "Password must be more than 6 digit", Toast.LENGTH_LONG).show();
                 }
@@ -134,10 +146,10 @@ public class UserRegister extends AppCompatActivity {
                                     } else {
                                         Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
                                         firebaseDatabase = FirebaseDatabase.getInstance();
-                                        UserRegisterHelperClass userRegisterHelperClass = new UserRegisterHelperClass(nic, name, mobile, email, spin);
+
                                         databaseReference = firebaseDatabase.getReference("User Details").child("Users");
                                         FirebaseUser firebaseUser = auth.getCurrentUser();
-                                        databaseReference.child(firebaseUser.getUid()).setValue(userRegisterHelperClass);
+
                                         Toast.makeText(getApplicationContext(), "User created", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                         startActivity(new Intent(getApplicationContext(), Dashboard.class));
