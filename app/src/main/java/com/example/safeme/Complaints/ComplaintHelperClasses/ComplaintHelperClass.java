@@ -12,33 +12,8 @@ public class ComplaintHelperClass {
     String ImageLink;
     String Status;
     String check;
-
-    public String getCheck() {
-        return check;
-    }
-
-    public void setCheck(String check) {
-        this.check = check;
-    }
-
-    public ComplaintHelperClass(String check) {
-        this.check = check;
-    }
-
-    public ComplaintHelperClass() {
-    }
-
-    public ComplaintHelperClass(String nic, String name, String mobile, String city, String cid, String date, String description, String cType, String status) {
-        NIC = nic;
-        Name = name;
-        Mobile = mobile;
-        City = city;
-        CID = cid;
-        Date = date;
-        Description = description;
-        CType = cType;
-        Status = status;
-    }
+    String lates;
+    String checked;
 
     public String getNIC() {
         return NIC;
@@ -118,5 +93,29 @@ public class ComplaintHelperClass {
 
     public void setStatus(String status) {
         Status = status;
+    }
+
+    public String getCheck() {
+        return check;
+    }
+
+    public void setCheck(String check) {
+        this.check = check;
+    }
+
+    public String getLates() {
+        return lates;
+    }
+
+    public void setLates(String lates) {
+        this.lates = lates;
+    }
+
+    public String getChecked() {
+        return checked;
+    }
+
+    public void setChecked(String checked) {
+        this.checked = checked;
     }
 }
