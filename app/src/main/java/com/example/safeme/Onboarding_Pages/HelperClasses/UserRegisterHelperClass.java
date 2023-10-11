@@ -7,8 +7,10 @@ public class UserRegisterHelperClass {
     String Email;
     String City;
     Boolean checked;
+    Boolean checked2;
     Double testString;
     String NewNIC;
+    String NewNIC2;
 
     public String getNIC() {
         return NIC;
@@ -58,6 +60,14 @@ public class UserRegisterHelperClass {
         this.checked = checked;
     }
 
+    public Boolean getChecked2() {
+        return checked2;
+    }
+
+    public void setChecked2(Boolean checked2) {
+        this.checked2 = checked2;
+    }
+
     public Double getTestString() {
         return testString;
     }
@@ -73,4 +83,13 @@ public class UserRegisterHelperClass {
     public void setNewNIC(String newNIC) {
         NewNIC = newNIC;
     }
+
+    public String getNewNIC2() {
+        return NewNIC2;
+    }
+
+    public void setNewNIC2(String newNIC2) {
+        NewNIC2 = newNIC2;
+    }
 }
+
