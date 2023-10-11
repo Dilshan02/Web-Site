@@ -184,4 +184,10 @@ public class UserRegister extends AppCompatActivity {
         finish();
         Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
     }
+    public void gotoLogin2(View view) {
+        Intent intent = new Intent(UserRegister.this, UserLogin.class);
+        startActivity(intent);
+        finish();
+        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
+    }
 }

@@ -117,6 +117,15 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         startActivity(i);
         Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
     }
+    private void signout2() {
+        FirebaseAuth.getInstance().signOut();
+        Intent i = new Intent(getApplicationContext(),
+                UserLogin.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
+                Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+        Toast.makeText(getApplicationContext(), "Please enter your NIC", Toast.LENGTH_LONG).show();
+    }
 
     //Navigation Drawer functions
     private void navigationDrawer() {
