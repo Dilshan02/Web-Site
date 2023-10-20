@@ -8,18 +8,37 @@ public class ComplaintHelperClass {
     String CID;
     String Date;
     String Description;
+    String Description2;
     String CType;
     String ImageLink;
     String Status;
     String check;
     String lates;
     String checked;
+    String checked2;
 
     public String getNIC() {
         return NIC;
     }
 
     public void setNIC(String NIC) {
+        this.NIC = NIC;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+
+
+     public void setNIC(String NIC) {
+        this.NIC = NIC;
+    }
+
+    public String getName() {
+        return Name;
+    }
+     public void setNIC(String NIC) {
         this.NIC = NIC;
     }
 
