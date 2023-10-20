@@ -12,6 +12,8 @@ public class ComplaintHelperClass {
     String ImageLink;
     String Status;
     String check;
+    String ASERfwrgStatus;
+    String touytucheck;
 
     public String getCheck() {
         return check;
@@ -138,23 +140,5 @@ public class ComplaintHelperClass {
     public void setStatus(String status) {
         Status = status;
     }
-    public void setCType(String CType) {
-        this.CType = CType;
-    }
-
-    public String getImageLink() {
-        return ImageLink;
-    }
-
-    public void setImageLink(String imageLink) {
-        ImageLink = imageLink;
-    }
-
-    public String getStatus() {
-        return Status;
-    }
-
-    public void setStatus(String status) {
-        Status = status;
-    }
+    
 }
