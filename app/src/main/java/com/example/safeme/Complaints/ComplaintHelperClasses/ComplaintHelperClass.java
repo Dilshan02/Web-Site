@@ -8,45 +8,35 @@ public class ComplaintHelperClass {
     String CID;
     String Date;
     String Description;
+    String Description2;
     String CType;
     String ImageLink;
     String Status;
     String check;
-    String ASERfwrgStatus;
-    String touytucheck;
 
-    public String getCheck() {
-        return check;
-    }
-
-    public void setCheck(String check) {
-        this.check = check;
-    }
-
-    public ComplaintHelperClass(String check) {
-        this.check = check;
-    }
-
-    public ComplaintHelperClass() {
-    }
-
-    public ComplaintHelperClass(String nic, String name, String mobile, String city, String cid, String date, String description, String cType, String status) {
-        NIC = nic;
-        Name = name;
-        Mobile = mobile;
-        City = city;
-        CID = cid;
-        Date = date;
-        Description = description;
-        CType = cType;
-        Status = status;
-    }
 
     public String getNIC() {
         return NIC;
     }
 
     public void setNIC(String NIC) {
+        this.NIC = NIC;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+
+
+     public void setNIC(String NIC) {
+        this.NIC = NIC;
+    }
+
+    public String getName() {
+        return Name;
+    }
+     public void setNIC(String NIC) {
         this.NIC = NIC;
     }
 
@@ -121,24 +111,6 @@ public class ComplaintHelperClass {
     public void setStatus(String status) {
         Status = status;
     }
-    public void setCType(String CType) {
-        this.CType = CType;
-    }
 
-    public String getImageLink() {
-        return ImageLink;
-    }
 
-    public void setImageLink(String imageLink) {
-        ImageLink = imageLink;
-    }
-
-    public String getStatus() {
-        return Status;
-    }
-
-    public void setStatus(String status) {
-        Status = status;
-    }
-    
 }
