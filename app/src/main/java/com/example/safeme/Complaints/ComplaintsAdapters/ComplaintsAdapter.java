@@ -33,18 +33,18 @@ public class ComplaintsAdapter extends RecyclerView.Adapter {
 
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
-        ComplaintHolderClass complaintHolderClass = (ComplaintHolderClass) holder;
-        ComplaintHelperClass complaintHelperClass = complaintHelperClasses.get(position);
-
-        complaintHolderClass.CID.setText("CID : " + complaintHelperClass.getCID());
-        complaintHolderClass.Type.setText("Type : " + complaintHelperClass.getCType());
-        complaintHolderClass.Date.setText("Date : " + complaintHelperClass.getDate());
-        complaintHolderClass.NIC.setText("NIC : " + complaintHelperClass.getNIC());
-        complaintHolderClass.Status.setText("Status : " + complaintHelperClass.getStatus());
-    }
+   // @Override
+  //  public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+//
+    //    ComplaintHolderClass complaintHolderClass = (ComplaintHolderClass) holder;
+     //   ComplaintHelperClass complaintHelperClass = complaintHelperClasses.get(position);
+//
+      //  complaintHolderClass.CID.setText("CID : " + complaintHelperClass.getCID());
+      //  complaintHolderClass.Type.setText("Type : " + complaintHelperClass.getCType());
+      //  complaintHolderClass.Date.setText("Date : " + complaintHelperClass.getDate());
+      //  complaintHolderClass.NIC.setText("NIC : " + complaintHelperClass.getNIC());
+       // complaintHolderClass.Status.setText("Status : " + complaintHelperClass.getStatus());
+   // }
 
     @Override
     public int getItemCount() {
