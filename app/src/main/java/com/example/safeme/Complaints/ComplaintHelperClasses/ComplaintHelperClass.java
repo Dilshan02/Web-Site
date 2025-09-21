@@ -15,6 +15,16 @@ public class ComplaintHelperClass {
     String lates;
     String checked;
 
+    String Status;
+    String check;
+    String lates;
+    String checked;
+
+    String Status;
+    String check;
+    String lates;
+    String checked;
+
     public String getNIC() {
         return NIC;
     }
